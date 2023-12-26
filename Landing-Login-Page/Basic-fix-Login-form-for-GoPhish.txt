@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In Page!</title>
+</head>
+<body>
+
+<form action="" method="post"><input class="form-control" maxlength="200" name="username" placeholder="Email" type="text" value="" /> 
+<input class="form-control" maxlength="200" name="password" placeholder="Enter Desired Password" type="password" value="" /> 
+
+<input class="btn btn-primary span3" style="margin: 10px 0; padding: 5px; box-sizing: border-box; outline: none; list-style: none; text-decoration: none; font-family: 'Roboto', sans-serif; background-color: #3897f0; border: 1px solid #3897f0; border-radius: 4px; text-align: center; color: #fff; width: 269px;" type="submit" value="Log In" />&nbsp;
+
+</form>
+</body>
+</html>
