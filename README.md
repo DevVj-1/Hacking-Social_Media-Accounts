@@ -68,9 +68,17 @@ Here is a minimal example <form> element which captures data:
 
 Each of these should be checked when troubleshooting HTML forms that don't appear to be sending data correctly.
 If you still aren't seeing your form submitted correctly, you may need to review and remove any Javascript on the page interfering with the form submission.
-Finally, ensure that when saving the landing page that you have both the "Capture Submitted Data" and "Capture Passwords" (if appropriate) options checked. Otherwise, Gophish will remove the name attributes from your inputs so they aren't submitted with the form.
+Finally, ensure that when saving the landing page that you have both the "Capture Submitted Data" and "Capture Passwords" (if appropriate) options checked. Otherwise, Gophish will remove the name attributes from your inputs so they aren't submitted with the form. 
+
+# Q2  How i setup Phishing Campaing ? 
+
+You can read this article to get more information about how to set up a phishing campaign!
+```
+https://www.hackercoolmagazine.com/gophish-setup-a-phishing-campaign/
+```
 
 ## Disclaimer
-The files in this repository were created and modified by me,  for my own personal use and come with no guarantee to work for you. I provide these files "as-is" and offer no support whatsoever to get them working. A lot of these files use terrible formatted and layered tables, anyone working with email and newsletter designs knows how painful they can be, and how worse it is to reverse-engineer those.🦆
+The files in this repository were created and modified by me,  for my own personal use and come with no guarantee to work for you. I provide these files "as-is" and offer no support whatsoever to get them working. A lot of these files use terrible formatted and layered tables, anyone working with email and newsletter designs knows how painful they can be, and how worse it is to reverse-engineer those.🦆 
+
 
 
