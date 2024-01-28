@@ -48,7 +48,8 @@ Sender: `no-reply@accounts.google.com`
 
 ![chromemail](https://i.imgur.com/wx0g4ZC.png)
 
-# Q/A Submitted Form Data Isn't Being Captured ? 
+## Q/A ❓
+### Q1 Submitted Form Data Isn't Being Captured (o_O)? 
 To capture data submitted through a landing page, you need to create an HTML <form> element on your landing page that has a few specific properties:
 Here is a minimal example <form> element which captures data: 
 
@@ -70,7 +71,7 @@ Each of these should be checked when troubleshooting HTML forms that don't appea
 If you still aren't seeing your form submitted correctly, you may need to review and remove any Javascript on the page interfering with the form submission.
 Finally, ensure that when saving the landing page that you have both the "Capture Submitted Data" and "Capture Passwords" (if appropriate) options checked. Otherwise, Gophish will remove the name attributes from your inputs so they aren't submitted with the form. 
 
-# Q2  How i setup Phishing Campaing ? 
+### Q2  How i setup Phishing Campaing ? ¯\_(ツ)_/¯ 
 
 You can read this article to get more information about how to set up a phishing campaign!
 ```
