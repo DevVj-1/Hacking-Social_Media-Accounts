@@ -45,9 +45,15 @@ Sender: `security@mail.instagram.com`
 
 ![instagrammail](https://i.imgur.com/ILUT94f.png)
 
-#### Google Chrome OS Mail Template 💈
+#### Google Chrome OS Mail Template 💈  
 
-A very basic Google mail, which notifies the user about a login.  
+<div align="center">
+
+![1](
+https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZmbmE5bmdhdnE2aGlrd3M1eWRzMDA1Nmp3OGQxM210MGFnZjZqYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/39iwo4k4Utd6pRryL8/giphy.gif)
+</div>
+
+**A very basic Google mail, which notifies the user about a login.** 
 
 Subject: `New Sign In`  
 Sender: `no-reply@accounts.google.com`  
@@ -160,7 +166,11 @@ Select or enter file name (without extensions): hacker
 
 **When the victim receives your email containing an attachment, the attachment is a password-protected spreadsheet or MS Word file. Make sure you provide a password in your phishing email. When Your target downloads 📩 the file and then enters the password to open it . your malicious payload is executed on their computer!** 
 
-**because antivirus software is not able to scan your malicious file, as it is encrypted and password-protected.🔐**
+**because antivirus software is not able to scan your malicious file, as it is encrypted and password-protected.🔐** 
+<div align="center">
+
+![1](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTh2cWNwY2toOWg5cjBxbjFrM2RsNmtlcjZxdnhwY3B3bG52aW50dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VLWIuR02bq33gp48aQ/giphy.gif)
+</div>
 
 ## Disclaimer
 The files in this repository were created and modified by me,  for my own personal use and come with no guarantee to work for you. I provide these files "as-is" and offer no support whatsoever to get them working. A lot of these files use terrible formatted and layered tables, anyone working with email and newsletter designs knows how painful they can be, and how worse it is to reverse-engineer those.🦆 
