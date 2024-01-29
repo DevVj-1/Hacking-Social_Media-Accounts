@@ -155,7 +155,12 @@ LPORT=$yourPort
 Payload encoder: None
 Select or enter file name (without extensions): hacker
 ```
+## Pro tip ♦️: 
+**You can put a password on your payload file to bypass Windows antivirus. 🔍**
 
+**When the victim receives your email containing an attachment, the attachment is a password-protected spreadsheet or MS Word file. Make sure you provide a password in your phishing email. When Your target downloads 📩 the file and then enters the password to open it . your malicious payload is executed on their computer!** 
+
+**because antivirus software is not able to scan your malicious file, as it is encrypted and password-protected.🔐**
 
 ## Disclaimer
 The files in this repository were created and modified by me,  for my own personal use and come with no guarantee to work for you. I provide these files "as-is" and offer no support whatsoever to get them working. A lot of these files use terrible formatted and layered tables, anyone working with email and newsletter designs knows how painful they can be, and how worse it is to reverse-engineer those.🦆 
