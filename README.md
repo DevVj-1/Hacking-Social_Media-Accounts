@@ -175,5 +175,8 @@ Select or enter file name (without extensions): hacker
 ## Disclaimer
 The files in this repository were created and modified by me,  for my own personal use and come with no guarantee to work for you. I provide these files "as-is" and offer no support whatsoever to get them working. A lot of these files use terrible formatted and layered tables, anyone working with email and newsletter designs knows how painful they can be, and how worse it is to reverse-engineer those.🦆 
 
+## How you Bypass Gmail macro restrictions
+
+![IMG_20240217_110508](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/assets/106962581/fa1a6ba9-63e2-4e7b-afe5-397e71985875)
 
 
