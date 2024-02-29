@@ -176,7 +176,14 @@ Select or enter file name (without extensions): hacker
 The files in this repository were created and modified by me,  for my own personal use and come with no guarantee to work for you. I provide these files "as-is" and offer no support whatsoever to get them working. A lot of these files use terrible formatted and layered tables, anyone working with email and newsletter designs knows how painful they can be, and how worse it is to reverse-engineer those.🦆 
 
 ## How you Bypass Gmail macro restrictions
+You can bypass gmail scanning for potentially malicious macros by converting Microsoft Word (.docx) or Excel (.xlsx) files into PDF format before sending them via email. Then, you suggest informing the recipient (Target) to convert the file back to its original format in order to use it. 
 
 ![IMG_20240217_110508](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/assets/106962581/fa1a6ba9-63e2-4e7b-afe5-397e71985875)
 
+While PDF files are generally considered safer than Word or Excel files in terms of macro-based attacks, they are not immune to security risks. PDF files can contain other types of malicious content, such as embedded links or JavaScript-based attacks.
+
+<div align="center">
+
+![1](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnA4MWxmZHVjdGV6Mmw5ZGc5M3FyYXBsbXhzYW5mdTV3Z2tnNWxvNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jth6eoS4noFUDH7IcM/giphy.gif)
+</div>
 
