@@ -167,6 +167,7 @@ Select or enter file name (without extensions): hacker
 **When the victim receives your email containing an attachment, the attachment is a password-protected spreadsheet or MS Word file. Make sure you provide a password in your phishing email. When Your target downloads 📩 the file and then enters the password to open it . your malicious payload is executed on their computer!** 
 
 **because antivirus software is not able to scan your malicious file, as it is encrypted and password-protected.🔐** 
+Antiviruses are designed to scan for malicious behavior. Not to crack the password protected file, LoL.
 <div align="center">
 
 ![1](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTh2cWNwY2toOWg5cjBxbjFrM2RsNmtlcjZxdnhwY3B3bG52aW50dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VLWIuR02bq33gp48aQ/giphy.gif)
