@@ -62,6 +62,16 @@ Sender: `no-reply@accounts.google.com`
 
 ![chromemail](https://i.imgur.com/wx0g4ZC.png)
 
+## Free web port Forwarding...
+![port-Forwarding](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/assets/106962581/dd71a684-9b92-4f30-a3db-ee568b7067f8)
+
+
+```
+http://localhost.run/
+```
+![green](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/assets/106962581/c0a32b9e-18ee-4025-acb1-e74711819845)
+
+
 ## Q/A ❓
 ### Q1 Submitted Form Data Isn't Being Captured (o_O)? 
 To capture data submitted through a landing page, you need to create an HTML <form> element on your landing page that has a few specific properties:
