@@ -206,6 +206,10 @@ While PDF files are generally considered safer than Word or Excel files in terms
 ```
 https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit?pli=1#gid=1700243466
 ```
+🌐 A Beginner's Guide to Social Media Verification 📌
+```
+https://www.bellingcat.com/resources/2021/11/01/a-beginners-guide-to-social-media-verification/
+```
 
 <div align="center">
 
