@@ -200,8 +200,9 @@ You can bypass gmail scanning for potentially malicious macros by converting Mic
 
 While PDF files are generally considered safer than Word or Excel files in terms of macro-based attacks, they are not immune to security risks. PDF files can contain other types of malicious content, such as embedded links or JavaScript-based attacks.
 
-## OSINT (Open-source Intelligence)  
+## OSINT (Open-source Intelligence)
 
+※ https://inteltechniques.com/tools/Username.html
 🔎 Freely available online open source investigation toolkit.🕵️‍♂️
 ```
 https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit?pli=1#gid=1700243466
