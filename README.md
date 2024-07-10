@@ -12,7 +12,7 @@ Hacking Social Media Accounts with Phishing Tool (GoPhish) 🐟
 
 ***so be sure to show some love!🩸🫶🏽***
 
-* ※ If this trick helps you, then don’t forget to share this repo with others! Hackers :)
+* ※ If this tricks helps you, then don’t forget to share this repo with other! Hackers :)
 
 
 <div align="center">
