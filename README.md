@@ -292,6 +292,7 @@ This tool looks at things like plants, building styles, and weather in the pictu
 </div>
 
 - **[MSF-Persistence-Backdoor](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/blob/main/MSF-Persistence-Backdoor.md)**:
+- **[Metasploit Unleashed](https://www.offsec.com/metasploit-unleashed/)**: More Hacking Tricks and commands 👁️⃤
   
 
 ![somthing](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/assets/106962581/38160faf-3a18-48de-8f24-e0270ba70fa1)
