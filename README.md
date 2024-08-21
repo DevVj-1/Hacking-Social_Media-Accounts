@@ -182,6 +182,11 @@ LPORT=$yourPort
 Payload encoder: None
 Select or enter file name (without extensions): hacker
 ```
+# Malicious Macros Generators
+
+1) https://github.com/cldrn/macphish
+2) https://github.com/cedowens/Mythic-Macro-Generator
+   
 ## Pro tip ♦️: 
 **You can put a password on your payload file to bypass Windows antivirus. 🔍**
 
