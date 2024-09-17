@@ -1,9 +1,5 @@
 # reCAPTCHA Phish
 
-> John Hammond | September 13, 2024
-
-------------------------------
-
 ![Verify You Are Human](https://github.com/user-attachments/assets/56be51b9-e58d-40e9-bdb1-54bcc11d4180)
 
 This is small harness to recreate the social engineering and phishing lure recently seen in the wild around August/September 2024.
