@@ -213,6 +213,10 @@ While PDF files are generally considered safer than Word or Excel files in terms
 
 ※ https://inteltechniques.com/tools/Username.html
 🔎 Freely available online open source investigation toolkit.🕵️‍♂️
+
+![OSINT](https://github.com/user-attachments/assets/064b8201-e4fc-421b-9d37-e725bb9532e8)
+
+
 ```
 https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit?pli=1#gid=1700243466
 ```
