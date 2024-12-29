@@ -250,6 +250,28 @@ https://grabify.link/
 2) Create a Tracker Link :
 https://tracker.iplocation.net/
 
+3) Telegram BOT 🎯💯:- @Camera_location_sf1_bot
+
+![Screenshot 2024-12-29 225659](https://github.com/user-attachments/assets/3eefb243-3275-4b45-b8a9-4c829a706777)
+
+You can Hack:
+
+🎯 Front Camera 📷
+
+🎯 exact Location with map 📍
+
+🎯 Phone number
+
+🎯 Sim Type
+
+🎯 IP, Battery, and many more...
+
+Q) What is baiting technique?
+Baiting is a variant of social engineering where the perpetrator lures the victim with attractive offers or rewards. This tactic tricks the victim into unintentionally downloading malware into their system or revealing confidential personal or organizational information
+
+![Screenshot 2024-12-29 225751](https://github.com/user-attachments/assets/532ee92f-eb23-44da-acb6-aaaf70d989f2)
+
+
 
 ## How do you Track an Email Address?
 
