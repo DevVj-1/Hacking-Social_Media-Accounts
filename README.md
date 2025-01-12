@@ -266,6 +266,8 @@ You can Hack:
 
 🎯 IP, Battery, and many more...
 
+![Screenshot 2025-01-12 154944](https://github.com/user-attachments/assets/26b521c9-2969-4dfd-88af-9092ac1460b1)
+
 Q) What is baiting technique?
 Baiting is a variant of social engineering where the perpetrator lures the victim with attractive offers or rewards. This tactic tricks the victim into unintentionally downloading malware into their system or revealing confidential personal or organizational information
 
