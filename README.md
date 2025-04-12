@@ -29,6 +29,9 @@ Some very basic configurations and templates to provide clean layouts usable in 
 
 ## Installation ⚓
 Installing the files is easy. Download the GoPhish client and log in at `https://127.0.0.1:3333/` with the standard credentials visible in the command line. There, the various templates and landing pages can be configured with my html configurations. 
+
+![12 04 2025_10 08 00_REC](https://github.com/user-attachments/assets/2cf1edf5-96e0-4489-aa33-ab421b2c7551)
+
  
 ## Features 🎣
 * Instagram Landing Page
