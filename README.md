@@ -74,6 +74,10 @@ Sender: `no-reply@accounts.google.com`
 ## Free web port Forwarding...
 ![port-Forwarding](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/assets/106962581/dd71a684-9b92-4f30-a3db-ee568b7067f8)
 
+# 💻 Playit.gg TCP Reverse Shell Port Forwarding 
+
+🛑 YOUTUBE Video: https://youtu.be/uoOuLqkmidU?si=Lv2b5K2UmRBsGnLi
+
 ### Just 👇 run this command ₊˚🎐
 ```
 ssh -R 80:localhost:8080 nokey@localhost.run
