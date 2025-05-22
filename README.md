@@ -78,6 +78,10 @@ Sender: `no-reply@accounts.google.com`
 
 🛑 YOUTUBE Video: https://youtu.be/uoOuLqkmidU?si=Lv2b5K2UmRBsGnLi
 
+⚓ https://github.com/DevVj-1/Hacking-Social_Media-Accounts/blob/main/Shell_Port-Forwarding.md
+
+
+
 ### Just 👇 run this command ₊˚🎐
 ```
 ssh -R 80:localhost:8080 nokey@localhost.run
