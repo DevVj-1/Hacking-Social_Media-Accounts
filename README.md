@@ -125,6 +125,11 @@ https://www.hackercoolmagazine.com/gophish-setup-a-phishing-campaign/
 #
 
 # 🚀 How To HOst a Deface WebPage by Exploiting XSS Vulnerability
+
+
+
+preview 👉: https://prdb.pk/front/search/ICA8aWZyYW1lIHNyYz0iaHR0cHM6Ly9yYW1lZDgwMDQ4LnB5dGhvbmFueXdoZXJlLmNvbS8iICBzdHlsZT0iYm9yZGVyOiAwOyBwb3NpdGlvbjpmaXhlZDsgdG9wOjA7IGxlZnQ6MDsgcmlnaHQ6MDsgYm90dG9tOjA7IHdpZHRoOiAxMDAlOyBoZWlnaHQ6MTAwJSI+
+
 ![Team_Valhalla](https://github.com/user-attachments/assets/e56cb946-30bd-4ecc-9a7e-5cb0b952e70c)
 
 🛑 Youtube Video Tutorial:  https://youtu.be/znlRD3A-1hY?si=lYkZUJLU9DqOQTej
