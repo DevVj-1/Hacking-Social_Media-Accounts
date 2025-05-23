@@ -124,6 +124,14 @@ https://www.hackercoolmagazine.com/gophish-setup-a-phishing-campaign/
 # 
 #
 
+# 🚀 How To HOst a Deface WebPage by Exploiting XSS Vulnerability
+![Team_Valhalla](https://github.com/user-attachments/assets/e56cb946-30bd-4ecc-9a7e-5cb0b952e70c)
+
+🛑 Youtube Video Tutorial:  https://youtu.be/znlRD3A-1hY?si=lYkZUJLU9DqOQTej
+
+✍️ Writeup: https://github.com/DevVj-1/Hacking-Social_Media-Accounts/blob/main/Deface-Web-by-exploiting-xss.md
+
+
 ## OSINT (Open-source Intelligence)
 
 ※ https://inteltechniques.com/tools/Username.html
