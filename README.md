@@ -163,6 +163,7 @@ https://map.malfrats.industries/
 ![ojeon6pzrkqivmrydatu](https://github.com/user-attachments/assets/a8c3ac4c-b0ac-497e-a7a3-6a538cda906f) 
 
 **Ultimate-osint-collection :** https://start.me/p/DPYPMz/the-ultimate-osint-collection
+**https://start.me/p/L1rEYQ/osint4all
 
 ## GeoOSINT 🔎
 
