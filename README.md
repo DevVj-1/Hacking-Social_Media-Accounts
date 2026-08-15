@@ -193,7 +193,7 @@ https://map.malfrats.industries/
 ![Screenshot 2025-05-16 230753](https://github.com/user-attachments/assets/48f0c80d-fec7-4d7e-b811-55a2c65d7dd6)
 
 
-※ http://data.mashedworld.com/dualmaps/map.htm
+※ https://data.mashedworld.com/dualmaps/map.htm
 
 # Social Media Verification
 
@@ -204,6 +204,7 @@ https://www.bellingcat.com/resources/2021/11/01/a-beginners-guide-to-social-medi
 ※ Username searching...🔍 
 ```
 https://whatsmyname.app/
+https://github.com/Xquik-dev/x-twitter-scraper
 ```
 ## Tracking via phishing links...
 
